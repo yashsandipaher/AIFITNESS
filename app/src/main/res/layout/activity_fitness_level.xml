@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    android:padding="20dp"
+    tools:context=".fitness_level">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 3 of 8"
+            android:textColor="@color/white"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/poppins"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progressTint="@color/dark_red"
+            android:progressBackgroundTint="@color/white"
+            android:progress="30" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choose_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Fitness \Type"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="25dp"
+        android:layout_below="@id/progress_layout"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/choose_txt">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/beginner_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muscular"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/begineer"
+                android:background="@drawable/button_selector"
+                android:padding="10dp"/>
+
+
+            <Button
+                android:id="@+id/intermediate_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cardio"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/intermidiate"
+                android:background="@drawable/button_selector"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_bg"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"/>
+
+
+
+
+</RelativeLayout>

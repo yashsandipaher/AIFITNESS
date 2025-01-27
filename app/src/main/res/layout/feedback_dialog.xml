@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="20dp">
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/feedbackTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We value your feedback"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp" />
+
+    <!-- Diet Feedback -->
+    <TextView
+        android:id="@+id/dietFeedbackLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:text="How satisfied are you with the current diet plan?"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/dietSatisfactionGroup"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/satisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Satisfied" />
+        <RadioButton android:id="@+id/neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Neutral" />
+        <RadioButton android:id="@+id/dissatisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dissatisfied" />
+    </RadioGroup>
+
+    <!-- Exercise Feedback -->
+    <TextView
+        android:id="@+id/exerciseFeedbackLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How difficult was the current exercise plan?"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp" />
+
+    <RadioGroup
+        android:id="@+id/exerciseDifficultyGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Too Easy" />
+        <RadioButton android:id="@+id/justRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Just Right" />
+        <RadioButton android:id="@+id/difficult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Too Difficult" />
+    </RadioGroup>
+
+    <!-- Mood Feedback -->
+    <TextView
+        android:id="@+id/moodFeedbackLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How is your mood after following the plan?"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="10dp" />
+
+    <RadioGroup
+        android:id="@+id/moodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Happy" />
+        <RadioButton android:id="@+id/neutralMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Neutral" />
+        <RadioButton android:id="@+id/stressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/dark_red"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Stressed" />
+    </RadioGroup>
+
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/button_bg"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_medium"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="@color/night"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="20dp"
+            android:background="@drawable/bg_home">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:text="Yash"/>
+                <TextView
+                    android:id="@+id/date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_txt"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:text="25 Aug 2025"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_logout"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/logout"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_icon" />
+
+                    <ImageButton
+                        android:id="@+id/btn_account"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/profile"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_icon" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/box_bg"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1.6">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PROGRESS"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="19dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/dark_red"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight=".4"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Category"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/Category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="NULL"
+                            android:textColor="@color/dark_red"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Normal Weight"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/Normal_Weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="NULL"
+                            android:textColor="@color/dark_red"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Normal Height"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/normal_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="NULL"
+                            android:textColor="@color/dark_red"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="BMI"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/BMI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="NULL"
+                            android:textColor="@color/dark_red"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8">
+
+
+                    <com.ekn.gruzer.gaugelibrary.HalfGauge
+                        android:id="@+id/bmiGauge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="#21A6F3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="UNDERWEIGHT"
+                        android:paddingLeft="5dp"
+                        android:textColor="#21A6F3"
+                        android:textSize="8dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="#40BC64"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="NORMAL"
+                        android:paddingLeft="5dp"
+                        android:textColor="#40BC64"
+                        android:textSize="8dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="#FCC454"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="OVERWEIGHT"
+                        android:paddingLeft="5dp"
+                        android:textColor="#FCC454"
+                        android:textSize="8dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="#FC5448"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="OBESITY"
+                        android:paddingLeft="5dp"
+                        android:textColor="#FC5448"
+                        android:textSize="8dp" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="DIET PLAN"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/box_bg"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/diet_1">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="56dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:rotation=".2"
+                            android:text="DIET PLAN"
+                            android:textColor="#5F7932"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.158"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="68dp"
+                            android:fontFamily="@font/poppins"
+                            android:rotation=".2"
+                            android:text="Eat well, \nfeel well"
+                            android:textColor="#767028"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.148"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                        <Button
+                            android:id="@+id/diet_plan_start_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/start_btn_bg"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="start"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.162"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3"
+                            app:layout_constraintVertical_bias="0.51" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="EXERCISE PLAN"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/box_bg"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/exercise">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="#E0E7E7"
+                        android:textSize="25dp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="WORKOUT"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="#A6C2CD"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Transform your sweat \ninto strength."/>
+
+
+
+                    <Button
+                        android:id="@+id/exercise_start_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/start_bg"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="start"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

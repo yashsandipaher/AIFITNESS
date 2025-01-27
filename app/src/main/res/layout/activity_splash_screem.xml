@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    tools:context=".splash_screem">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="FitTrack"
+        android:textColor="@color/dark_red"
+        android:textSize="32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Copyright @ 2024"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/rosewood"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
